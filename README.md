@@ -1,12 +1,6 @@
-# Equihash - Zcash Implementation
-nodejs native binding to check for valid Equihash solutions
 
-# Dependencies
-````
-sudo apt-get install build-essential libsodium-dev libboost-system-dev
-````
 
-# Usage
+# 示例
 ````javascript
 var ev = require('bindings')('equihashverify.node');
 
@@ -17,15 +11,9 @@ ev.verify(header, solution, n, k);
 //returns boolean
 ````
 
-# Backward compatibility
+# 默认 （200,9）
 ````javascript
 ev.verify(header, solution);
 ````
 
-# Test Suite:
-````
-sudo npm install -g mocha
-npm install
-mocha
-````
 
